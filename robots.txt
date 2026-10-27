@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_phone_test.html
+
+Sitemap: https://loboykoa.github.io/sitemap.xml
