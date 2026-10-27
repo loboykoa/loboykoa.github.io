@@ -254,7 +254,7 @@
         </label>
         <p class="req-err" id="reqErr" role="alert" hidden></p>
         <button class="btn req-btn" type="submit">Отправить заявку в Telegram</button>
-        <p class="req-hint">Откроется чат со мной с готовым текстом заявки — останется нажать «Отправить». <a href="#phone" class="nophone-link" hidden>Нет Telegram? Оставьте телефон →</a></p>
+        <p class="req-hint">Откроется чат со мной с готовым текстом заявки — останется нажать «Отправить». <a href="#phone" class="nophone-link">Нет Telegram? Оставьте телефон →</a></p>
       </form>
 
       <div class="req-done" id="reqDone" hidden aria-live="polite">
@@ -272,14 +272,14 @@
   </div>
 </section>
 
-<!-- Заявка без Telegram: Яндекс Форма. Включается, когда форма создана: убрать hidden у секции и у ссылки .nophone-link, вставить ID формы в src -->
-<section class="section section-paper section-tight" id="phone" hidden>
+<!-- Заявка без Telegram: Яндекс Форма «Заявка на расчёт — перезвоню» (аккаунт Яндекса Александра). Письмо на почту + копия ботом в Telegram -->
+<section class="section section-paper section-tight" id="phone">
   <div class="wrap">
     <p class="kicker">Нет Telegram?</p>
     <h2>Оставьте телефон и опишите задачу — перезвоню</h2>
     <p class="sub">Заявка придёт мне на почту и в Telegram. Отвечу в течение рабочего дня.</p>
     <div class="yaform">
-      <iframe src="about:blank" data-src="https://forms.yandex.ru/u/FORM_ID/?iframe=1" name="ya-form-FORM_ID" title="Заявка с телефоном" loading="lazy"></iframe>
+      <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/6ae08751c45c072e670f462d?iframe=1" frameborder="0" name="ya-form-6ae08751c45c072e670f462d" title="Заявка с телефоном"></iframe>
     </div>
   </div>
 </section>
