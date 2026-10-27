@@ -67,6 +67,11 @@
     } else { out.select(); document.execCommand('copy'); ok(); }
   });
 
+  var nophone = document.querySelector('.nophone-link');
+  if (nophone) nophone.addEventListener('click', function () {
+    if (typeof window.ym === 'function' && window.METRIKA_ID) window.ym(window.METRIKA_ID, 'reachGoal', 'phone_form');
+  });
+
   document.getElementById('editBtn').addEventListener('click', function () {
     done.hidden = true;
     form.hidden = false;
